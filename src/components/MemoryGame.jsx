@@ -59,7 +59,7 @@ const MemoryGame = () => {
       }
 
       // Delay to reset flipped cards
-      setTimeout(() => setFlipped([]), 1000); // Reset flipped after a short delay
+      setTimeout(() => setFlipped([]), 500); // Reset flipped after a short delay
     }
   };
 
@@ -79,7 +79,7 @@ const MemoryGame = () => {
             type="number"
             value={gridSize}
             min="2"
-            max="10"
+            max="6"
             onChange={handleSizeChange}
           />
         </div>
